@@ -2,8 +2,8 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - main
+    tags:  # 当有新的 tag 时触发
+      - '*'  # 匹配所有 tag
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
