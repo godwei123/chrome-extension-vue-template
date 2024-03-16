@@ -1,4 +1,5 @@
 import { defineManifest } from '@crxjs/vite-plugin'
+// @ts-ignore
 import packageData from '../package.json'
 
 const isDev = process.env.NODE_ENV == 'development'
@@ -10,7 +11,7 @@ export default defineManifest({
   manifest_version: 3,
   icons: {
     16: 'img/google-extension-16.png',
-    32: 'img/google-extension-34.png',
+    32: 'img/google-extension-32.png',
     48: 'img/google-extension-48.png',
     128: 'img/google-extension-128.png',
   },
@@ -36,10 +37,19 @@ export default defineManifest({
   },
   web_accessible_resources: [
     {
-      resources: ['img/google-extension-16.png', 'img/google-extension-34.png', 'img/google-extension-48.png', 'img/google-extension-128.png'],
+      resources: [
+        'img/google-extension-16.png',
+        'img/google-extension-32.png',
+        'img/google-extension-48.png',
+        'img/google-extension-128.png',
+      ],
       matches: [],
     },
   ],
+  /**
+   * 权限
+   * @see https://developer.chrome.com/docs/extensions/mv3/manifest/permissions/
+   */
   permissions: ['sidePanel', 'storage'],
   chrome_url_overrides: {
     newtab: 'pages/newtab.html',

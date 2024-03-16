@@ -1,8 +1,4 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const link = ref('https://github.com/guocaoyi/create-chrome-ext')
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <main>

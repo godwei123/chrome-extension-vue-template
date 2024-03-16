@@ -2,7 +2,6 @@
 import { ref, watch, onMounted } from 'vue'
 
 const count = ref(0)
-const link = ref('https://github.com/guocaoyi/create-chrome-ext')
 
 const minus = () => {
   if (count.value > 0) count.value--

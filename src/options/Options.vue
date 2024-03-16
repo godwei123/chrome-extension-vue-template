@@ -2,7 +2,6 @@
 import { ref, onMounted } from 'vue'
 
 const countSync = ref(0)
-const link = ref('https://github.com/guocaoyi/create-chrome-ext')
 
 onMounted(() => {
   chrome.storage.sync.get(['count'], (result) => {
