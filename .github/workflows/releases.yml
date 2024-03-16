@@ -37,6 +37,8 @@ jobs:
         run: yarn build
       - name: Build Zip
         run: yarn zip
+      - name: Info
+        run: pwd && ls
       - name: Build CRX
         run: yarn crx
       - name: Upload release
