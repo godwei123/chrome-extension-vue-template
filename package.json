@@ -19,11 +19,11 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build && yarn zip && yarn crx",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "fmt": "prettier --write '**/*.{vue,ts,json,css,scss,md}'",
-    "zip": "node ../script/zip.js",
-    "crx": "node ../script/crx.js"
+    "zip": "node script/zip.js",
+    "crx": "node script/crx.js"
   },
   "dependencies": {
     "vue": "^3.3.4"

@@ -35,6 +35,10 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn build
+      - name: Build Zip
+        run: yarn zip
+      - name: Build CRX
+        run: yarn crx
       - name: Upload release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
