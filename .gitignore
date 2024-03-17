@@ -31,3 +31,5 @@ types
 
 # build
 template-*/package
+
+key.pem

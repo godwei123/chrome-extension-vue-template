@@ -23,7 +23,7 @@
     "preview": "vite preview",
     "fmt": "prettier --write '**/*.{vue,ts,json,css,scss,md}'",
     "zip": "node script/zip.js",
-    "crx": "node script/crx.js"
+    "crx": "cd build && crx pack -o ../dist/chrome-extension-vue-template.crx"
   },
   "dependencies": {
     "vue": "^3.3.4"
